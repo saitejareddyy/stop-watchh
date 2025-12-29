@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.stopwatch-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 16px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.title {
+    font-size: 26px;
+    color: #00ffff;
+    margin-bottom: 20px;
+}
+
+.time-display {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.start { background: #00c853; }
+.stop { background: #ff5252; }
+.reset { background: #2979ff; }
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
